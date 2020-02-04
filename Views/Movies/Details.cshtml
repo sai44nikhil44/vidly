@@ -1,0 +1,13 @@
+﻿@model vidly.Models.movie
+
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+<li>Genre: @Model.Genres.GenreName</li>
+<li>Released Date: @Model.ReleasedDate</li>
+<li>Added Date: @Model.AddedDate</li>
+<li>Number in Stock: @Model.NumberInStock</li>
+
